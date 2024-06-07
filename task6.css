@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: 'Urbanist';
+}
+
+.wrapper-centering {
+  box-sizing: border-box;
+  overflow: hidden;
+  min-height: 100dvh;
+  max-height: 900px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hide-wrapper {
+  border-radius: 30px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.burger-menu {
+  position: absolute;
+  z-index: 999;
+  background-color: #FF6B00 !important;
+}
+
+.burger-btn-area {
+  display: flex;
+  align-items: center;
+}
+
+.burger-btn {
+  all: unset;
+  margin-left: 32px;
+}
+
+.burger-btn-area>img {
+  width: 30px;
+  height: 30px;
+}
+
+.burger-nav {
+  margin-top: 24px;
+}
+
+.burger-nav>ul li {
+  margin-left: 32px;
+  margin-bottom: 49px;
+  gap: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.burger-nav>ul>li a {
+  all: unset;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.8px;
+
+}
+
+
+.wrapper-grid {
+  width: 400px;
+  min-height: 100dvh;
+  max-height: 900px;
+  background-color: #f1f1f1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  border-radius: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  width: 334px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-btn {
+  all: unset;
+}
+
+h1 {
+  width: 334px;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 38.4px;
+}
+
+.main-search-block {
+  position: relative;
+}
+
+.main-search-block>img {
+  position: absolute;
+  top: 30px;
+  right: 9px;
+  background-color: #FF6B00;
+  padding: 11px;
+  border-radius: 50%;
+}
+
+input[type="search"] {
+  border: none;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 24px;
+  margin-top: 25px;
+  padding: 15px 19px;
+  width: 334px;
+  height: 54px;
+  border-radius: 100px;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 77px);
+  grid-template-rows: repeat(1, 115px);
+  gap: 16px;
+  margin-top: 27px;
+}
+
+.grid-slot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grid-slot-img-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 77px;
+  width: 77px;
+  background-color: white;
+  border-radius: 20px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+}
+
+.grid-slot:nth-child(1) h3 {
+  color: black;
+}
+
+.grid-slot-description {
+  height: 25px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.popular-caption {
+  align-self: flex-start;
+  font-size: 24px;
+  font-weight: 900;
+  padding: 11px 44px;
+}
+
+.myContent {
+  position: relative;
+}
+
+.myContent>img:nth-child(1) {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: -35px;
+  left: 35px;
+  z-index: 999;
+}
+
+.myContent>img:nth-child(2) {
+  height: 27px;
+  width: 27px;
+}
+
+.myContent>h4 {
+  position: absolute;
+  text-align: center;
+  z-index: 50;
+  top: 113px;
+  left: 18px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  width: 163px;
+  height: 53px;
+}
+
+.price-wrapper {
+  position: absolute;
+  width: 157px;
+  top: 178px;
+  left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+
+
+
+footer {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.footer-content {
+  width: 334px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content img {
+  all: unset;
+  align-self: center;
+  width: 30px;
+  height: 30px;
+}
+
+.footer-content>div>img {
+  position: absolute;
+  top: calc(50% - 17px);
+  left: calc(50% - 15px);
+
+}
+
+.footer-content>div {
+  position: relative;
+  background-color: #FF6B00;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
